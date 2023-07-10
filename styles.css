@@ -1,0 +1,127 @@
+:root {
+  /* ============ VARIABLES =============== */
+  --primary-color-blue: #0570a1;
+  --primary-color-white: #ffffff;
+
+  --color-darkblue: #182640;
+  --color-black: #3a4049;
+  --color-light-blue: #3d4bc6;
+  --color-light-green: #3dc67f;
+  --color-light-red: #c63d3d;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style-type: none;
+}
+body {
+  font-family: "Inter", sans-serif;
+  font-family: "Mulish", sans-serif;
+  font-family: "Poppins", sans-serif;
+}
+
+.hero--section {
+  background-image: url("./images/hero-background.png");
+  min-height: 600px;
+}
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 1rem;
+  align-items: center;
+}
+.nav--action--btn {
+  /* padding: 10px 30px 10px 30px; */
+  padding: 0.4rem 1.2rem;
+  border-radius: 10px;
+  background-color: var(--primary-color-blue);
+  color: var(--primary-color-white);
+  font-weight: 300;
+  font-size: 1rem;
+}
+
+/* ================================ HEADER SECTION ========================================= */
+
+.hero--content {
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto;
+  margin-top: 3rem;
+}
+.hero--text {
+  max-width: 45%;
+}
+.title-text {
+  font-weight: 700;
+  font-size: 2.3rem;
+  line-height: 1.4;
+  color: var(--color-darkblue);
+  margin-top: 6rem;
+}
+.sub-text {
+  margin-top: 0.5rem;
+  margin-bottom: 2rem;
+}
+.green-text {
+  color: var(--color-light-green);
+  font-weight: 600;
+}
+.red-text {
+  color: var(--color-light-red);
+  font-weight: 600;
+}
+.blue-text {
+  color: var(--color-light-blue);
+  font-weight: 600;
+}
+.hero-cta-btn {
+  padding: 0.4rem 1.2rem;
+  border-radius: 10px;
+  background-color: var(--primary-color-blue);
+  color: var(--primary-color-white);
+  font-weight: 300;
+  font-size: 1rem;
+}
+.hero--image {
+  max-width: 55%;
+  position: absolute;
+  right: 30px;
+  top: 100px;
+}
+
+/* ==================================== MAIN SECTION 1 ==================================================== */
+
+.main--section-1 {
+  margin: 0 auto;
+  justify-content: center;
+  margin-top: 3rem;
+}
+.layout-adjust {
+    text-align: center;
+}
+.section2-title {
+  color: var(--color-darkblue);
+}
+.section2-title-text {
+  color: var(--color-black);
+}
+.layout-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.sec2-text{
+  max-width: 48%;
+}
+.sec2-image{
+  max-width: 45%;
+}
+
