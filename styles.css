@@ -24,7 +24,7 @@ body {
 
 .hero--section {
   background-image: url("./images/hero-background.png");
-  min-height: 600px;
+  height: 600px;
 }
 .container {
   width: 80%;
