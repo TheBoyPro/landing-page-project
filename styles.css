@@ -20,12 +20,14 @@ body {
   font-family: "Inter", sans-serif;
   font-family: "Mulish", sans-serif;
   font-family: "Poppins", sans-serif;
-  font-size: 20px;
+  /* font-size: 20px; */
 }
 
 .hero--section {
   background-image: url("./images/hero-background.png");
-  min-height: 600px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  min-height: 670px;
 }
 .container {
   width: 80%;
@@ -34,12 +36,12 @@ body {
 .navbar {
   display: flex;
   justify-content: space-between;
-  padding-top: 1rem;
+  padding-top: 2rem;
   align-items: center;
 }
 .nav--action--btn {
-  /* padding: 10px 30px 10px 30px; */
   padding: 0.7rem 1.7rem;
+  padding: 10px 30px 10px 30px;
   border-radius: 10px;
   background-color: var(--primary-color-blue);
   color: var(--primary-color-white);
@@ -65,7 +67,7 @@ body {
   font-size: 2.3rem;
   line-height: 1.4;
   color: var(--color-darkblue);
-  /* margin-top: 6rem; */
+  margin-top: 6rem;
 }
 .sub-text {
   margin-top: 0.5rem;
@@ -93,9 +95,9 @@ body {
 }
 .hero--image {
   max-width: 65%;
-  /* position: absolute; */
-  /* right: 30px; */
-  /* top: 100px; */
+  position:absolute ;
+  right: 30px;
+  top: 116px;
 }
 
 /* ==================================== MAIN SECTION 1 ==================================================== */
