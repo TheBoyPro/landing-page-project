@@ -26,8 +26,8 @@ body {
 .hero--section {
   background-image: url("./images/hero-background.png");
   background-repeat: no-repeat;
-  background-size: contain;
-  min-height: 670px;
+  background-size:cover ;
+  min-height: 1080px;
 }
 .container {
   width: 80%;
@@ -40,12 +40,12 @@ body {
   align-items: center;
 }
 .nav--action--btn {
-  padding: 0.7rem 1.7rem;
-  padding: 10px 30px 10px 30px;
+  padding: .7rem 2.2rem;
+  /* padding: 10px 30px 10px 30px; */
   border-radius: 10px;
   background-color: var(--primary-color-blue);
   color: var(--primary-color-white);
-  font-weight: 300;
+  font-weight: 500;
   font-size: 1rem;
 }
 
@@ -63,15 +63,16 @@ body {
   max-width: 35%;
 }
 .title-text {
-  font-weight: 700;
-  font-size: 2.3rem;
+  font-weight: 600;
+  font-size: 3.2rem;
   line-height: 1.4;
   color: var(--color-darkblue);
-  margin-top: 6rem;
+  margin-top: 10rem;
 }
 .sub-text {
+  font-size: 1.2rem;
   margin-top: 0.5rem;
-  margin-bottom: 2rem;
+  margin-bottom: 2.5rem;
 }
 .green-text {
   color: var(--color-light-green);
@@ -86,18 +87,18 @@ body {
   font-weight: 600;
 }
 .hero-cta-btn {
-  padding: 0.4rem 1.2rem;
+  padding: .7rem 2.2rem;
   border-radius: 10px;
   background-color: var(--primary-color-blue);
   color: var(--primary-color-white);
-  font-weight: 300;
+  font-weight: 400;
   font-size: 1rem;
 }
 .hero--image {
-  max-width: 65%;
+  max-width: 55%;
   position:absolute ;
-  right: 30px;
-  top: 116px;
+  right: 70px;
+  top: 132px;
 }
 
 /* ==================================== MAIN SECTION 1 ==================================================== */
@@ -111,20 +112,40 @@ body {
   text-align: center;
 }
 .section2-title {
+  font-size: 2.2rem;
+  margin-bottom: .5rem;
   color: var(--color-darkblue);
 }
 .section2-title-text {
+  font-size: 1.6rem;
   color: var(--color-black);
 }
 .layout-container {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  padding-left: 130px;
 }
 .sec2-text{
-  max-width: 48%;
+  max-width: 42%;
+  font-size: 1.6rem;
+  line-height: 2;
+}
+.list-items {
+  display: flex;
+  align-items: center;
+}
+.last-child {
+  align-self: flex-start;
+  margin-top: .5rem;
+}
+.list-image {
+width: 30px;
+height: 30px;
+margin-right: 30px;
 }
 .sec2-image{
-  max-width: 45%;
+  max-width: 49%;
 }
+
 
