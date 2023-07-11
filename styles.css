@@ -299,7 +299,6 @@ body {
   font-weight: 400;
   font-size: 1.5rem;
   cursor: pointer;
-
 }
 
 /* ================================ MAIN SECTION 6 =========================== */
@@ -337,6 +336,8 @@ body {
   margin-bottom: 2rem;
 }
 .avatar-img {
+  width: 273px;
+  height: 282px;
   filter: grayscale(100%);
 }
 .avatar img {
@@ -345,8 +346,7 @@ body {
 }
 .layer {
   position: absolute;
-  top: 0;
-  /* border-bottom: 1px solid var(--primary-color-blue); */
+  top: 0px;
   max-height: 0;
   overflow: hidden;
   transition: max-height 500ms;
@@ -411,4 +411,431 @@ footer {
   text-decoration: underline;
 }
 
+/* ================================================== MEDIA QUERIES ============================== */
+
+@media screen and (max-width: 1020px) {
+  /* ===== Hero section ======= */
+  .hero--section {
+    min-height: 700px;
+  }
+  .container {
+    width: 90%;
+  }
+  .hero--text {
+    max-width: 48%;
+  }
+  .hero--image {
+    max-width: 48%;
+    position: absolute;
+    right: 70px;
+    top: 150px;
+  }
+  .title-text {
+    margin-top: 2rem;
+  }
+
+  /* ==== main section 2 ===== */
+  .layout-container {
+    padding-left: 30px;
+  }
+  .list-items {
+    align-items: flex-start;
+    font-size: 1.6rem;
+  }
+  .list-image {
+    margin-top: 0.7rem;
+  }
+  /* ==== main section 3 ===== */
+
+  .sec3-image {
+    max-width: 50%;
+  }
+  .sec3-text {
+    max-width: 40%;
+    margin-top: 3rem;
+  }
+  .sec3-write-up {
+    margin-bottom: 5rem;
+  }
+
+  /* ======= main section 4 ===== */
+
+  .main--section-4 {
+    min-height: 300px;
+  }
+  .sec4-image {
+    width: 50%;
+    height: 450px;
+  }
+  .review-container {
+    min-width: 606px;
+    right: 100px;
+    bottom: 65px;
+  }
+  .review-text {
+    padding: 2.5rem 1.8rem 0.8rem;
+    line-height: 1.3;
+  }
+
+  /* ======== main section 5 =======  */
+
+  .main--section-5 {
+    margin-top: 2rem;
+    min-height: 400px;
+  }
+  .sec5-title {
+    max-width: 50%;
+    margin-bottom: 2.5rem;
+  }
+  .sec5-title h3 {
+    font-size: 2rem;
+  }
+  .checkboxes {
+    gap: 1rem;
+    max-width: 80%;
+  }
+  .box-empty {
+    background-color: var(--color-light-gray);
+    font-size: 1.5rem;
+  }
+  .sec5-cta-btn-text {
+    padding: 0.7rem 2.4rem;
+    font-size: 1.3rem;
+  }
+  /* ==============main secction 6 ======= */
+  .main--section-6 {
+    margin-bottom: 2rem;
+  }
+  .sec6-title {
+    margin-bottom: 3rem;
+    text-align: center;
+  }
+  .sec6-title h3 {
+    font-size: 2.2rem;
+  }
+  .sec6-layout-container {
+    display: block;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 90%;
+    margin: 0 auto;
+  }
+  .sec6-text {
+    text-align: center;
+    margin: 0 auto;
+    font-size: 1.3rem;
+    max-width: 80%;
+  }
+  .sec6-image {
+    padding-top: 2rem;
+    width: 80%;
+    margin: 0 auto;
+    max-width: 100%;
+  }
+  .col-1 {
+    margin-right: 0rem;
+  }
+  .col-2 {
+    margin-top: 0rem;
+  }
+
+  /* ======= main secction 7 ====== */
+  .sec7-image {
+    height: 500px;
+    width: auto;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .container {
+    width: 95%;
+  }
+  .nav--action--btn {
+    padding: 0.6rem 1.8rem;
+    font-size: 1rem;
+  }
+  .hero--section {
+    min-height: 500px;
+  }
+  .hero-logo {
+    width: 180px;
+  }
+  .hero--image {
+    left: 1000px;
+  }
+  .hero--text {
+    max-width: 100%;
+  }
+  .hero--text li {
+    text-align: center;
+  }
+  .title-text {
+    font-weight: 600;
+    font-size: 1.6rem;
+    line-height: 1.4;
+    margin-top: 2.5rem;
+    text-align: center;
+  }
+  .sub-text {
+    text-align: center;
+    font-size: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 3rem;
+  }
+
+  /* ======== main section 2 ========= */
+  .layout-container {
+    padding-left: 0px;
+    max-width: 90%;
+  }
+  .section2-title {
+    font-size: 1.6rem;
+    line-height: 1.4;
+    font-weight: 600;
+  }
+  .section2-title-text {
+    font-size: 1.1rem;
+    max-width: 80%;
+    margin: 0 auto;
+    margin-bottom: 2rem;
+  }
+  .layout-container {
+    display: block;
+    margin: 0 auto;
+  }
+  .sec2-text {
+    margin-top: 2rem;
+    max-width: 90%;
+    font-size: 1.6rem;
+    line-height: 1.7;
+    margin: 0 auto;
+  }
+  .list-items {
+    align-items: flex-start;
+    font-size: 1rem;
+  }
+  .list-image {
+    margin-top: 0.2rem;
+    width: 20px;
+    height: 20px;
+  }
+  .sec2-image {
+    max-width: 100%;
+    margin: 0 auto;
+  }
+
+  /* ============ main section 3 ========= */
+
+  .section3-title {
+    font-size: 1.6rem;
+  }
+  .section3-title-text {
+    font-size: 1.1rem;
+    max-width: 80%;
+    margin: 0 auto;
+    margin-top: 0.5rem;
+  }
+  .sec3-layout-container {
+    display: block;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding-top: 1.5rem;
+  }
+  .sec3-image {
+    max-width: 100%;
+  }
+  .sec3-text {
+    max-width: 100%;
+    margin-top: 3rem;
+  }
+  .sec3-write-up {
+    margin-bottom: 2.5rem;
+  }
+  .sec3-write-up h3 {
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+  .sec3-write-up p {
+    font-size: 1rem;
+    line-height: 1.4;
+    text-align: center;
+    max-width: 90%;
+    margin: 0 auto;
+  }
+  .sec3-write-up li {
+    text-align: center;
+  }
+  .sec3-write-up-last-child {
+    margin-bottom: 2.5rem;
+  }
+  /* ========== main section 4 ============ */
+
+  .main--section-4 {
+    min-height: 400px;
+    padding-top: 2rem;
+    padding-bottom: 4rem;
+    position: relative;
+  }
+  .sec4-image {
+    width: 70%;
+    height: 380px;
+  }
+  .review-container {
+    min-width: 400px;
+    position: absolute;
+    right: 0px;
+    bottom: 65px;
+    z-index: 1;
+  }
+  .review-text {
+    width: 100%;
+    border-radius: 10px;
+    padding: 1.5rem 1rem 0.6rem;
+    line-height: 1.2;
+  }
+  .par-1 {
+    font-size: 1rem;
+    margin-bottom: 2rem;
+  }
+  .par-2 h3 {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+  }
+
+  /* ============= main section 5 ======== */
+  .main--section-5 {
+    margin-top: 1.8rem;
+    margin-bottom: 5rem;
+    min-height: 400px;
+  }
+  .sec5-title {
+    max-width: 80%;
+    align-self: center;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 2.5rem;
+  }
+  .sec5-title h3 {
+    font-size: 1.6rem;
+    margin-bottom: 0.5rem;
+  }
+  .sec5-title p {
+    font-size: 1.1rem;
+  }
+  .checkboxes {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.6rem;
+    max-width: 95%;
+    margin: 0 auto;
+    justify-content: center;
+    margin-bottom: 4rem;
+  }
+  .box-empty {
+    padding: 0.5rem 0.8rem;
+    font-size: 1.2rem;
+  }
+
+  .sec5-cta-btn-text {
+    padding: 0.6rem 2.2rem;
+    font-size: 1.1rem;
+  }
+
+  /* ========= main section 6 ========= */
+  .main--section-6 {
+    margin-bottom: 2rem;
+  }
+  .sec6-title {
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+  .sec6-title h3 {
+    font-size: 2.2rem;
+  }
+  .sec6-layout-container {
+    display: block;
+    width: 95%;
+    margin: 0 auto;
+  }
+  .sec6-text {
+    font-size: 1.1rem;
+    max-width: 80%;
+  }
+  .sec6-image {
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+  }
+  .avatar {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    margin: 0 auto;
+  }
+  .avatar-img {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    margin: 0 auto;
+  }
+  /* ====== */
+  .layer {
+    position: absolute;
+    top: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 500ms;
+  }
+  .avatar:hover .layer {
+    max-height: 900px;
+    cursor: pointer;
+  }
+
+  /* ====== */
+
+  .col-1 {
+    display: flex;
+    gap: 1rem;
+    margin-right: 0rem;
+  }
+  .col-2 {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+
+  /* ======================================== MAIN SECTION 7 ================= */
+  .sec7-image {
+    height: 250px;
+    width: auto;
+  }
+
+  /* ========== footer section ========== */
+  footer {
+    background-color: var(--primary-color-blue);
+    padding: 1rem 0;
+  }
+  .footer-logo {
+    width: 110px;
+    height: auto;
+  }
+  .footer-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .copyright {
+    color: var(--primary-color-white);
+    text-align: center;
+  }
+  .socials {
+    display: block;
+    gap: .7rem;
+  }
+  .socials li a {
+    color: var(--primary-color-white);
+    text-decoration: underline;
+  }
+}
 
