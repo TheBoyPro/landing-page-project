@@ -51,6 +51,9 @@ body {
   font-weight: 500;
   font-size: 1rem;
 }
+.fa-arrow-right {
+ color: var(--primary-color-white)
+}
 
 /* ================================ HEADER SECTION ========================================= */
 
@@ -242,6 +245,12 @@ body {
 }
 .review-btns {
   display: flex;
+}
+.fa-circle-arrow-left {
+  color: var(--primary-color-white);
+}
+.fa-circle-arrow-right {
+  color: var(--primary-color-blue);
 }
 .review-btns-align {
   margin-right: auto;
