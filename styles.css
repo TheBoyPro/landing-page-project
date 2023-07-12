@@ -311,9 +311,11 @@ body {
 }
 .review-btns-align {
   margin-right: auto;
+  margin-bottom: 1rem;
 }
 .review-btns {
   margin-top: 1rem;
+  margin-bottom:1rem;
 }
 
 /* ================================= MAIN SECCTION 5 ============================ */
@@ -852,6 +854,8 @@ footer {
   }
   .review-btns {
     margin-top: .6rem;
+  margin-bottom: .5rem;
+    
   }
   .par-1 {
     font-size: 1rem;
