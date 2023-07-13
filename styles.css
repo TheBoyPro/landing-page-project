@@ -29,7 +29,7 @@ body {
 .hero--section {
   background-image: url("./images/hero-background.png");
   background-repeat: no-repeat;
-  background-size:contain;
+  background-size: contain;
   min-height: 1080px;
 }
 .container {
@@ -101,6 +101,7 @@ body {
   font-weight: 400;
   font-size: 1rem;
 }
+
 .hero--image {
   max-width: 55%;
   position: absolute;
@@ -156,18 +157,18 @@ body {
 .form-bgrd-1 {
   background-color: var(--form-color-light-blue);
   position: relative;
-  height: 537px;
+  height: 550px;
   border: 1px solid var(--form-color-light-blue);
   border-radius: 10px;
 }
 .form-bgrd-2 {
-  background-color: rgb(5, 112, 161, 0.5) ;
   position: absolute;
   width: 100%;
   height: 100%;
   bottom: 20px;
   border-radius: 10px;
   left: -20px;
+  background-color: rgb(5, 112, 161, 0.5);
 }
 .form {
   position: absolute;
@@ -179,7 +180,7 @@ body {
   bottom: 20px;
   background-color: var(--primary-color-white);
   border-radius: 10px;
-  box-shadow: 1px 1px 4px rgba(0,0,0,0.3)
+  box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3);
 }
 .form label {
   margin-top: 1rem;
@@ -202,9 +203,9 @@ body {
   margin-top: 1rem;
   position: absolute;
   right: 7%;
-  padding: .5rem 1.8rem;
-  padding-top: 1rem;
-  padding-bottom: 2rem;
+  padding: 1.8rem;
+  padding-top: 0.8rem;
+  padding-bottom: 2.4rem;
   font-size: 1rem;
   align-items: center;
 }
@@ -311,11 +312,14 @@ body {
 }
 .review-btns-align {
   margin-right: auto;
-  margin-bottom: 1rem;
 }
 .review-btns {
   margin-top: 1rem;
-  margin-bottom:1rem;
+  margin-bottom: 2rem;
+}
+.rev-btn-rgt {
+  margin-left: 1rem;
+  margin-right: 1rem;
 }
 
 /* ================================= MAIN SECCTION 5 ============================ */
@@ -502,7 +506,7 @@ footer {
 
 /* ================================================== MEDIA QUERIES ============================== */
 
-@media screen and (max-width: 1020px) {
+@media screen and (max-width: 1000px) {
   /* ===== Hero section ======= */
   .hero--section {
     min-height: 700px;
@@ -526,6 +530,7 @@ footer {
   /* ==== main section 2 ===== */
   .layout-container {
     padding-left: 30px;
+    margin-top: 5rem;
   }
   .list-items {
     align-items: flex-start;
@@ -535,10 +540,14 @@ footer {
     margin-top: 0.7rem;
   }
   .sec2-form {
-    width: 45%;
+    width: 47%;
+    margin-top: 5rem;
   }
   .form-bgrd-1 {
     height: 527px;
+  }
+  .form-bgrd-2 {
+    height: 420px;
   }
   .form {
     padding: 1rem 1rem 1rem;
@@ -549,7 +558,8 @@ footer {
     /* margin-bottom: 1rem; */
   }
   .form-submit-btn {
-    margin-top: 1.5rem;
+    margin-top: 2rem;
+    padding-top: 2rem;
   }
   /* ==== main section 3 ===== */
 
@@ -646,17 +656,24 @@ footer {
   }
 
   /* ======= main secction 7 ====== */
-  
+
   .sec7-image {
-    height: 500px;
+    height: 550px;
     width: auto;
   }
   .sec7-form {
     width: 40%;
   }
   .form-bgrd-1 {
-    height: 370px;
+    height: 420px;
   }
+  .sec7-form .form-bgrd-1 {
+    background-color: var(--form-color-light-blue);
+  }
+  .sec7-form .form-bgrd-2 {
+    background-color: rgb(110, 159, 182);
+  }
+ 
   .form {
     padding: 2rem 1.5rem 2.5rem;
   }
@@ -664,15 +681,15 @@ footer {
     margin-top: 0.4rem;
     padding-top: 1rem;
     padding-bottom: 1rem;
-    margin-bottom: .5rem;
+    margin-bottom: 0.5rem;
   }
   .form-submit-btn {
-    margin-top: .5rem;
+    margin-top: 0.5rem;
     position: absolute;
     right: 7%;
-    padding: .5rem 1.8rem;
-    padding-top: .8rem;
-    padding-bottom: 1.6rem;
+    padding: 0.5rem 1.8rem;
+    padding-top: 0.6rem;
+    padding-bottom: 2rem;
     font-size: 1rem;
   }
 }
@@ -757,27 +774,28 @@ footer {
     margin-left: 20%;
   }
   .form-bgrd-1 {
-    height: 350px;
+    height: 100%;
   }
+
   .form {
     padding: 1rem 1rem 1rem;
   }
   .form input {
     width: 100%;
     margin-top: 0.3rem;
-    padding-top: .4rem;
-    padding-bottom: .4rem;
-    margin-bottom: .4rem;
+    padding-top: 0.4rem;
+    padding-bottom: 0.4rem;
+    margin-bottom: 0.4rem;
   }
   .phone-label {
     margin-bottom: 1rem;
   }
   .form-submit-btn {
-    margin-top: .5rem;
+    margin-top: 0.5rem;
     position: absolute;
     right: 7%;
     padding: 1.8rem;
-    padding-top: .7rem;
+    padding-top: 0.7rem;
     padding-bottom: 1.6rem;
     font-size: 1rem;
   }
@@ -853,9 +871,7 @@ footer {
     line-height: 1.2;
   }
   .review-btns {
-    margin-top: .6rem;
-  margin-bottom: .5rem;
-    
+    margin-top: 0.6rem;
   }
   .par-1 {
     font-size: 1rem;
@@ -973,49 +989,49 @@ footer {
 
   /* ======================================== MAIN SECTION 7 ================= */
   .sec7-image {
-    height: 450px;
+    height: 460px;
   }
   .sec7-form {
     width: 70%;
-    top: 19%;
+    top: 16%;
   }
   .form-bgrd-1 {
-    height: 350px;
+    height: 380px;
   }
+
   .form-bgrd-2 {
+    height: 380px;
     bottom: 10px;
     left: -10px;
   }
   .form {
-    padding: 1.2rem 1.2rem .5rem;
+    padding: 2rem 1.2rem 1.5rem;
     left: -10px;
     bottom: 10px;
   }
   .form label {
-    font-size: .8rem;
+    font-size: 0.8rem;
   }
   .form input {
     width: 100%;
     border-radius: 10px;
     margin-top: 0.2rem;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-    margin-bottom: .8rem;
+    padding-top: 0.6rem;
+    padding-bottom: 0.6rem;
+    margin-bottom: 0.5rem;
   }
   .phone-label {
-    margin-bottom: 1rem;
+    margin-bottom: 0.3rem;
   }
   .form-submit-btn {
-    margin-top: .5rem;
+    margin-top: 0.5rem;
     position: absolute;
     right: 7%;
     padding: 1.8rem;
-    padding-top: .3rem;
-    padding-bottom: .6rem;
+    padding-top: 0.3rem;
+    padding-bottom: 0.6rem;
     font-size: 1rem;
   }
-  
-
 
   /* ========== footer section ========== */
   footer {
