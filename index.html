@@ -10,7 +10,7 @@
       rel="stylesheet"
     />
     <title>DialogFlux</title>
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="index.css" />
     <link rel="stylesheet" href="./build/css/demo.css" />
     <link rel="stylesheet" href="./build/css/intlTelInput.css" />
     <script
@@ -21,8 +21,8 @@
   <body>
     <header>
       <section class="hero--section">
-        <div class="container">
-          <nav class="navbar">
+        <nav class="navbar">
+          <div class="navbar-wrapper">
             <svg
               class="hero-logo"
               width="210"
@@ -86,8 +86,9 @@
                 <img src="./images/arrow-right.png" />
               </a>
             </li>
-          </nav>
-        </div>
+          </div>
+        </nav>
+        <div class="container"></div>
         <div class="hero--content">
           <div class="hero--text">
             <h1 class="title-text">
@@ -189,11 +190,11 @@
                       >Date<span class="red-text">*</span></label
                     >
                     <br />
-                    <input type="datetime" id="date" name="date" />
+                    <input placeholder="DD-MM-YYYY" type="datetime" id="date" name="date" />
                     <br />
                     <button class="hero-cta-btn form-submit-btn" type="submit">
-                      <span>Schedule a demo</span>
-                      <img src="./images/arrow-right.png" />
+                        <span>Schedule a demo</span>
+                        <img src="./images/arrow-right.png" />
                     </button>
                   </form>
                 </div>
@@ -220,46 +221,58 @@
                 alt="dashboard"
               />
             </div>
-            <div class="sec3-text">
-              <div class="sec3-write-up">
-                <h3>Real Time Insights</h3>
-                <p>
-                  Reveal agent performance, customer trends, and bottlenecks in
-                  the workflow. Leverage this information to make informed
-                  decisions, optimize processes, and continually improve the
-                  overall customer experience.
-                </p>
+            <div class="sec3-text-container">
+              <div class="hide-anim-overflow">
+                <div class="sec3-text-wrapper">
+                  <div class="sec3-write-up first">
+                    <div class="sec3-write-up-title-wrapper">
+                      <h3>Real Time Insights</h3>
+                    </div>
+                    <p>
+                      Reveal agent performance, customer trends, and bottlenecks
+                      in the workflow. Leverage this information to make
+                      informed decisions, optimize processes, and continually
+                      improve the overall customer experience.
+                    </p>
+                  </div>
+                  <div class="sec3-write-up">
+                    <div class="sec3-write-up-title-wrapper">
+                      <h3>Centralized Team Management</h3>
+                    </div>
+                    <p>
+                      Assign tickets, monitor agents performance, and gain
+                      valuable insights into your support operations to ensure
+                      smooth coordination and consistent service quality.
+                    </p>
+                  </div>
+                  <div class="sec3-write-up">
+                    <div class="sec3-write-up-title-wrapper">
+                      <h3>Keep Desks Out</h3>
+                    </div>
+                    <p>
+                      With our mobile app, your agents are no longer tied to
+                      their desks. They can stay connected with customers and
+                      respond to requests anytime, anywhere.
+                    </p>
+                  </div>
+                  <div class="sec3-write-up">
+                    <div class="sec3-write-up-title-wrapper">
+                      <h3>10X Your Efficiency</h3>
+                    </div>
+                    <p>
+                      With features like ticket assignment, priority tagging,
+                      and real-time notifications, your team can work smarter
+                      and resolve issues faster.
+                    </p>
+                  </div>
+                </div>
               </div>
-              <div class="sec3-write-up">
-                <h3>Centralized Team Management</h3>
-                <p>
-                  Assign tickets, monitor agents performance, and gain valuable
-                  insights into your support operations to ensure smooth
-                  coordination and consistent service quality.
-                </p>
-              </div>
-              <div class="sec3-write-up">
-                <h3>Keep Desks Out</h3>
-                <p>
-                  With our mobile app, your agents are no longer tied to their
-                  desks. They can stay connected with customers and respond to
-                  requests anytime, anywhere.
-                </p>
-              </div>
-              <div class="sec3-write-up sec3-write-up-last-child">
-                <h3>10X Your Efficiency</h3>
-                <p>
-                  With features like ticket assignment, priority tagging, and
-                  real-time notifications, your team can work smarter and
-                  resolve issues faster.
-                </p>
-                <li class="sec3-cta-btn">
-                  <a class="sec3-cta-btn-text" href="#"
-                    >Schedule a demo
-                    <img src="./images/arrow-right.png" />
-                  </a>
-                </li>
-              </div>
+              <li class="sec3-cta-btn">
+                <a class="sec3-cta-btn-text" href="#"
+                  >Schedule a demo
+                  <img src="./images/arrow-right.png" />
+                </a>
+              </li>
             </div>
           </div>
         </div>
@@ -287,10 +300,7 @@
           </div>
           <div class="review-btns">
             <div class="review-btns-align"></div>
-            <div>
-              <img src="./images/arrow-circle-left.png" class="rev-btn-lft" alt="prev" />
-              <img src="./images/arrow-circle-right.png" class="rev-btn-rgt" alt="next" />
-            </div>
+            <div></div>
           </div>
         </div>
       </section>
@@ -301,68 +311,33 @@
           <p>You can have it all...</p>
         </div>
         <div class="checkboxes">
-          <div class="box-empty">
-            <input
-              type="checkbox"
-              id="monitor-response"
-              name="monitor"
-              value=""
-            />
-            <label for="monitor-response">Monitor response time</label>
+          <div class="box-empty box-checked">
+            <img src="./images/checkbox-checked.png" alt="checked" />
+            <p for="monitor-response">Monitor response time</p>
           </div>
           <div class="box-empty">
-            <input
-              type="checkbox"
-              id="assign-ticket"
-              name="assign-ticket"
-              value=""
-            />
-            <label for="assign-ticket">Assign tickets</label>
+            <img src="./images/checkbox-empty.png" alt="empty" />
+            <p>Assign tickets</p>
           </div>
           <div class="box-empty">
-            <input
-              type="checkbox"
-              id="track-ticket"
-              name="track-ticket"
-              value=""
-            />
-            <label for="track-ticket">Track tickets</label>
+            <img src="./images/checkbox-empty.png" alt="empty" />
+            <p for="track-ticket">Track tickets</p>
           </div>
           <div class="box-empty">
-            <input
-              type="checkbox"
-              id="view-trends"
-              name="view-trends"
-              value=""
-            />
-            <label for="view-trends">View trends</label>
+            <img src="./images/checkbox-empty.png" alt="empty" />
+            <p for="view-trends">View trends</p>
           </div>
           <div class="box-empty">
-            <input
-              type="checkbox"
-              id="satisfaction"
-              name="satisfaction"
-              value=""
-            />
-            <label for="satisfaction">Customer satisfaction</label>
+            <img src="./images/checkbox-empty.png" alt="empty" />
+            <p for="satisfaction">Customer satisfaction</p>
           </div>
           <div class="box-empty">
-            <input
-              type="checkbox"
-              id="communication"
-              name="communication"
-              value=""
-            />
-            <label for="communication">Better communication</label>
+            <img src="./images/checkbox-empty.png" alt="empty" />
+            <p for="communication">Better communication</p>
           </div>
           <div class="box-empty">
-            <input
-              type="checkbox"
-              id="Scalability"
-              name="Scalability"
-              value=""
-            />
-            <label for="Scalability">Scalability</label>
+            <img src="./images/checkbox-empty.png" alt="empty" />
+            <p for="Scalability">Scalability</p>
           </div>
         </div>
         <li class="sec5-cta-btn">
@@ -483,6 +458,7 @@
       </section>
 
       <section class="main--section-7">
+        <div class="sec7-text"><h3>Contact Us</h3></div>
         <div class="sec7-image">
           <img
             width="100%"
